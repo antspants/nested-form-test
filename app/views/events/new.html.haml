@@ -1,0 +1,17 @@
+%h1 New Wvent
+%ul.errors
+  - @event.errors.full_messages.each do |msg|
+    %li= msg
+
+- if flash.present?
+  = flash[:notice]
+
+= form_for @event do |f|
+  = f.label :name, "event name"
+  = f.text_field :name
+  %p
+  = f.fields_for :my_events do |ff|
+    = ff.label :name, "my event name"
+    = ff.text_field :name
+  %p
+  = f.submit
