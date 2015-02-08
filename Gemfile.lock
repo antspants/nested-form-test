@@ -39,6 +39,7 @@ GEM
     arel (6.0.0)
     builder (3.2.2)
     erubis (2.7.0)
+    execjs (2.3.0)
     globalid (0.3.2)
       activesupport (>= 4.1.0)
     haml (4.0.6)
@@ -114,6 +115,9 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (2.7.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   ruby
@@ -124,3 +128,4 @@ DEPENDENCIES
   pg
   rails
   sqlite3
+  uglifier
